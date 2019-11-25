@@ -27,3 +27,4 @@ http://localhost:4200/register
 For now it is not configured with any DB created just for the purpose of instantly run with out much configurations and your DB is not required to run this. It will just store the user entered values as a list in service layer and we are displying them in tabular format using angular.
 
 However we can configure with DB and store the user entered values in DB if we want. For that you can enter your database details in application.properties file.
+
