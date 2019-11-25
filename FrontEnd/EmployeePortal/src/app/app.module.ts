@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { FetchEmpComponent } from './fetch-emp/fetch-emp.component';
 import { Contants } from './app.constant';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    FetchEmpComponent
+    FetchEmpComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
