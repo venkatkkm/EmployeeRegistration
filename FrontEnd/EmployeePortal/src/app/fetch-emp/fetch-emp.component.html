@@ -1,0 +1,28 @@
+<div class="container font">
+    <h2>Employees List</h2>
+</div>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Date Of Birth</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of emps">
+                <td>{{emp.firstName}}</td>
+                <td>{{emp.lastName}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{emp.dob | date | uppercase}}</td>
+                <td>{{emp.department}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <strong> You can register new employee by clicking <a routerLink="/register">here</a> </strong>
+</div>

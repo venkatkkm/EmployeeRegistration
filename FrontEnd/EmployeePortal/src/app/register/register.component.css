@@ -1,0 +1,18 @@
+.form-control{
+    width: 40%
+}
+.container{
+    align-content: center
+}
+.font{
+    font-family: sans-serif;
+  }
+.ng-invalid:not(form) {
+    border-left: 5px solid red;
+}
+.alert-warning{
+    width: 40%
+}
+.alert-success{
+    width : 40%
+}
