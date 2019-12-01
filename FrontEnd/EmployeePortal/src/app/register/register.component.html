@@ -34,7 +34,7 @@
                 #department="ngModel">
         </div>
         <div>
-            <button type="submit" class="btn btn-success">Register</button>
+            <button type="submit" [disabled]="!registerForm.valid" class="btn btn-success">Register</button>
         </div>
     </div>
 </form>
