@@ -1,8 +1,8 @@
 package com.emp.portal.model;
 
 import java.time.LocalDate;
-import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,16 +18,18 @@ public class Employee {
 	private String firstName;
 	private String lastName;
 	private String gender;
+	
+	@Column(name="Date_Of_Birth")
 	private LocalDate dob;
+	
 	private String department;
 
-	protected Employee() {
+	public Employee() {
 
 	}
 
-	public Employee(Long id, String firstName, String lastName, String gender, LocalDate dob, String department) {
+	public Employee(String firstName, String lastName, String gender, LocalDate dob, String department) {
 		super();
-		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.gender = gender;
